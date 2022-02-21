@@ -1,0 +1,43 @@
+.partner-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 0;
+    width: 224px;
+    padding: 13px 16px;
+    border: 1px solid $borderLogoPartners;
+    background-color: $bglogoPartners;
+}
+
+@media (min-width: 768px) {
+    .partner-logo {
+        width: 224px;
+        height: 72px;
+
+        &__logo-item {
+
+            &--tablet-hide {
+                display: none;
+            }
+
+            &--show {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width: 1120px) {
+    .partner-logo {
+        width: 240px;
+
+        &__logo-item {
+
+            &--desktop-show {
+                display: flex;
+            }
+        }
+    }
+}

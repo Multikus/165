@@ -1,0 +1,76 @@
+@import "_vars.scss";
+@import "_mixins.scss";
+@import "./fonts";
+@import "common.blocks/header/header";
+@import "common.blocks/chapter/chapter";
+@import "common.blocks/asside-menu/asside-menu";
+@import "common.blocks/header/mobile-menu";
+@import "common.blocks/menu/menu";
+@import "common.blocks/description/description";
+@import "common.blocks/read-more/read-more";
+@import "common.blocks/promo-img/promo-img";
+@import "common.blocks/repair/repair";
+@import "common.blocks/repair-tech/repair-tech";
+@import "common.blocks/price/price";
+@import "common.blocks/partner-logo/partner-logo";
+@import "common.blocks/section-title/section-title";
+@import "common.blocks/footer/footer";
+@import "common.blocks/feedback/feedback";
+@import "common.blocks/back-call/back-call";
+@import "common.blocks/button-order/button-order";
+@import "_js-style.scss";
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html * {
+    outline-color: $active;
+}
+
+p, h1, h2, h3,
+h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    background-color: $mbg;
+}
+
+.main {
+    max-width: 320px;
+}
+
+@media (min-width: 768px) {
+    .main {
+        min-width: 768px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .main {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main {
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+

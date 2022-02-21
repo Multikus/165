@@ -1,0 +1,12 @@
+.container { 
+    padding: 0px 16px;
+    overflow-x: hidden
+}
+
+@media (min-width: 1120px) {
+    .container {
+        padding-left: 32px;
+    }
+}
+
+@import "__lists/menu__lists";
